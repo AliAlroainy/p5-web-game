@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>let's play</title>
+    <link rel="shortcut icon" type="imge/x-i-icon" href="img/favicon.jpg" />
+    <script src="p5/p5.dom.min.js"></script>
+    <script src="p5/p5.js" ></script>
+    <script src="p5/p5.sound.min.js"></script>
+</head>
+<body>
+  <div class="grid-container">
+      <header class="header">
+         <div class="brand">
+            <button onclick="openMenu()" >
+                &#9776;
+            </button>
+             <a href="index.html"> let's play </a>
+         </div>
+         
+      </header>
+      <aside class="sidebar">
+         <h3> Games Categories</h3>
+         <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+          <ul>
+              <li>
+                <a href="">Action</a>   
+              </li>
+              <li>
+                <a href="">Advantoir</a>   
+              </li>
+          </ul>
+      </aside>
+      
+      <main class="main">
+         <div class="content">
+            <ul class="products">
+             
+              <li> 
+              <div class="product">
+                  <img class="product-image" src="img/s.jpg" alt="product">
+                  <div class="product-name">
+                  <a href="snak.html" >Snake Game</a>
+                  </div>
+                  <div class="product-brand"> verigon 1.0 </div>
+                  
+                  <div class="product-rating"> enjoy with snake growing </div>
+                  <a href="snake.html">
+                  <button class="product-button"> play </button>
+                  </a>
+              </div>
+               
+                </li>
+                
+                 <li> 
+              <div class="product">
+                  <img class="product-image" src="img/gam.jpg" alt="product">
+                  <div class="product-name">
+                  <a href="product.html" >gambol</a>
+                  </div>
+                  <div class="product-brand">verigon 1</div>
+                  
+                  <div class="product-rating">smily gambol </div>
+                  <a href="gam.html">
+                  <button class="product-button"> play </button>
+                  </a>
+              </div>
+                </li>
+                
+                <li> 
+              <div class="product">
+                  <img class="product-image" src="img/p.png" alt="product">
+                  <div class="product-name">
+                  <a href="product.html" >Piano Game</a>
+                  </div>
+                  <div class="product-brand">verigon 2.1</div>
+                  
+                  <div class="product-rating"> make a nice music</div>
+                  <a href="piano.html">
+                  <button class="product-button"> play </button>
+                  </a>
+              </div>
+                </li>
+                
+                <li> 
+              <div class="product">
+                  <img class="product-image" src="img/d.jpg" alt="product">
+                  <div class="product-name">
+                  <a href="product.html" >Draw game</a>
+                  </div>
+                  <div class="product-brand">verigon 1.2</div>
+                  
+                  <div class="product-rating">draw nice panting </div>
+                  <a href="draw.html">
+                  <button class="product-button"> play </button>
+                  </a>
+              </div>
+                </li>
+                
+                  
+                
+                
+          </ul> 
+         </div>
+          
+      </main>  
+      <footer class="footer">
+         <h2>
+          Done by : Ali AL-Roainy 
+          </h2>
+      </footer>    
+  </div>  
+  
+  <script>
+    function openMenu(){
+        document.querySelector(".sidebar").classList.add("open")
+    }
+    function closeMenu(){
+       document.querySelector(".sidebar").classList.remove("open")
+    } 
+    </script>
+</body>
+</html>
